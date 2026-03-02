@@ -1,0 +1,4 @@
+Place your profile photo here as:
+assets/profile.jpg
+
+I have already wired the hero image to this path.

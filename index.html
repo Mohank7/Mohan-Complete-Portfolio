@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mohan K – Cyber Security Student, Video Editor & Web Developer. Explore my portfolio of creative and technical projects." />
+  <meta name="keywords" content="Mohan K, portfolio, cyber security, video editor, web developer, Tamil Nadu" />
+  <meta property="og:title" content="Mohan K | Portfolio" />
+  <meta property="og:description" content="Cyber Security Student | Video Editor | Web Developer" />
+  <title>Mohan K | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <!--<span class="logo-bracket">&lt;</span>MK<span class="logo-bracket">/&gt;</span-->
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#credentials" class="nav-link">Certifications</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="900">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+        <h1 class="hero-name">Hi, I'm <span class="gradient-text">Mohan K</span></h1>
+        <div class="hero-tagline-wrap">
+          <p class="hero-tagline" id="typingText"></p>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-intro">Final-year B.E. CSE (Cyber Security) student with one year of hands-on experience in video
+          editing. Passionate about creative storytelling and technical development. Interested in full-stack web
+          development and cyber security fundamentals.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="play-circle" class="btn-icon"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i data-lucide="mail" class="btn-icon"></i>
+            Contact Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">100+</span>
+            <span class="stat-label">Reels Edited</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Web Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div class="hero-image-glow"></div>
+        <div class="hero-image-ring">
+          <div class="hero-avatar">
+            <img id="heroProfilePhoto" class="hero-profile-img" src="assets/profile.jpg" alt="Mohan K profile photo"
+              onload="document.getElementById('avatarPlaceholder').style.display='none';"
+              onerror="this.style.display='none'; document.getElementById('avatarPlaceholder').style.display='flex';" />
+            <div class="avatar-placeholder" id="avatarPlaceholder">
+              <i data-lucide="user" class="avatar-icon"></i>
+              <span class="avatar-text">MK</span>
+            </div>
+          </div>
+        </div>
+        <div class="floating-badge badge-cyber">
+          <i data-lucide="shield-check"></i>
+          <span>Cyber Security</span>
+        </div>
+        <div class="floating-badge badge-video">
+          <i data-lucide="video"></i>
+          <span>Video Editor</span>
+        </div>
+        <div class="floating-badge badge-web">
+          <i data-lucide="code-2"></i>
+          <span>Web Dev</span>
+        </div>
+        <div class="floating-badge badge-ai">
+          <i data-lucide="bot"></i>
+          <span>AI Agents</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A passionate individual bridging cybersecurity and creative media</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-bio-card" data-aos="fade-right" data-aos-delay="100">
+          <div class="card-glow"></div>
+          <h3 class="card-title">Who Am I?</h3>
+          <p class="about-bio-text">I'm Mohan K, a final-year B.E. CSE (Cyber Security) student with a dual passion for
+            digital security and creative storytelling through video. I blend the analytical mindset of a security
+            student with the artistic eye of a video editor.</p>
+          <div class="about-traits">
+            <div class="trait">
+              <i data-lucide="shield" class="trait-icon cyber-color"></i>
+              <span>Cyber Security Enthusiast</span>
+            </div>
+            <div class="trait">
+              <i data-lucide="film" class="trait-icon video-color"></i>
+              <span>Creative Video Editor</span>
+            </div>
+            <div class="trait">
+              <i data-lucide="globe" class="trait-icon web-color"></i>
+              <span>Web Developer in Progress</span>
+            </div>
+            <div class="trait">
+              <i data-lucide="bot" class="trait-icon ai-color"></i>
+              <span>AI Agents Explorer</span>
+            </div>
+            <div class="trait">
+              <i data-lucide="lightbulb" class="trait-icon learn-color"></i>
+              <span>Continuous Learner</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right-col">
+          <div class="education-card" data-aos="fade-left" data-aos-delay="150">
+            <div class="card-glow edu-glow"></div>
+            <div class="edu-icon-wrap"><i data-lucide="graduation-cap"></i></div>
+            <h3 class="card-title">Education</h3>
+            <div class="edu-item">
+              <div class="edu-degree">B.E. Computer Science & Engineering</div>
+              <div class="edu-spec">(Cyber Security Specialization)</div>
+              <div class="edu-institute">
+                <i data-lucide="building-2" style="width:14px;height:14px;"></i>
+                K S R Institute for Engineering and Technology
+              </div>
+              <div class="edu-duration">
+                <i data-lucide="calendar" style="width:14px;height:14px;"></i>
+                2022 – 2026
+              </div>
+            </div>
+          </div>
+          <div class="interest-card" data-aos="fade-left" data-aos-delay="250">
+            <div class="card-glow interest-glow"></div>
+            <h3 class="card-title">What Drives Me</h3>
+            <p>Working at the intersection of technology and creativity — using cybersecurity knowledge to protect
+              digital assets and video editing to craft compelling narratives. I'm always curious, always creating.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title"><span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">A blend of creative, technical &amp; AI-powered capabilities</p>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Video Editing -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-card-glow video-glow"></div>
+          <div class="skill-icon-wrap video-icon-wrap">
+            <i data-lucide="clapperboard"></i>
+          </div>
+          <h3 class="skill-title">Video Editing</h3>
+          <p class="skill-exp">1 Year Experience</p>
+          <div class="skill-tools">
+            <div class="tool-item">
+              <span class="tool-dot video-dot"></span>
+              <span>CapCut</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot video-dot"></span>
+              <span>Adobe After Effects</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot video-dot"></span>
+              <span>Motion Graphics</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot video-dot"></span>
+              <span>Color Grading</span>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label"><span>Proficiency</span><span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill video-fill" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cyber Security -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card-glow cyber-glow"></div>
+          <div class="skill-icon-wrap cyber-icon-wrap">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <h3 class="skill-title">Cyber Security</h3>
+          <p class="skill-exp">Academic + Hands-on</p>
+          <div class="skill-tools">
+            <div class="tool-item">
+              <span class="tool-dot cyber-dot"></span>
+              <span>Security Fundamentals</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot cyber-dot"></span>
+              <span>Networking Basics</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot cyber-dot"></span>
+              <span>Linux & CLI</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot cyber-dot"></span>
+              <span>Security Concepts</span>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label"><span>Proficiency</span><span>50%</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill cyber-fill" data-width="50"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-card-glow web-glow"></div>
+          <div class="skill-icon-wrap web-icon-wrap">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h3 class="skill-title">Web Development</h3>
+          <p class="skill-exp">Learning & Building</p>
+          <div class="skill-tools">
+            <div class="tool-item">
+              <span class="tool-dot web-dot"></span>
+              <span>HTML5</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot web-dot"></span>
+              <span>CSS3 & Animations</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot web-dot"></span>
+              <span>JavaScript</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot web-dot"></span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label"><span>Proficiency</span><span>70%</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill web-fill" data-width="70"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Agents -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-card-glow ai-glow"></div>
+          <div class="skill-icon-wrap ai-icon-wrap">
+            <i data-lucide="bot"></i>
+          </div>
+          <h3 class="skill-title">AI Agents</h3>
+          <p class="skill-exp">Actively Learning</p>
+          <div class="skill-tools">
+            <div class="tool-item">
+              <span class="tool-dot ai-dot"></span>
+              <span>LLM Fundamentals</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot ai-dot"></span>
+              <span>Prompt Engineering</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot ai-dot"></span>
+              <span>Agentic Workflows</span>
+            </div>
+            <div class="tool-item">
+              <span class="tool-dot ai-dot"></span>
+              <span>AI Automation</span>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label"><span>Proficiency</span><span>40%</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill ai-fill" data-width="40"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">Real-world projects and professional growth</p>
+      </div>
+      <div class="timeline-wrap">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot video-dot-tl"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-glow"></div>
+            <div class="timeline-header">
+              <div class="timeline-badge">Current</div>
+              <div class="timeline-duration">
+                <i data-lucide="calendar-days" style="width:14px;height:14px;"></i>
+                2025 – Present
+              </div>
+            </div>
+            <h3 class="timeline-role">Video Editor</h3>
+            <div class="timeline-company">
+              <i data-lucide="briefcase" style="width:14px;height:14px;"></i>
+              Nexgen Nextopia &amp; Vibbix Studio
+            </div>
+            <ul class="timeline-achievements">
+              <li>
+                <i data-lucide="check-circle-2" class="achievement-icon"></i>
+                Edited 100+ reels and promotional content across multiple platforms
+              </li>
+              <li>
+                <i data-lucide="check-circle-2" class="achievement-icon"></i>
+                Handled end-to-end client projects from briefing to final delivery
+              </li>
+              <li>
+                <i data-lucide="check-circle-2" class="achievement-icon"></i>
+                Worked on branding and storytelling for digital platforms
+              </li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tl-tag">CapCut</span>
+              <span class="tl-tag">After Effects</span>
+              <span class="tl-tag">Motion Graphics</span>
+              <span class="tl-tag">Branding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot edu-dot-tl"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-glow edu-tl-glow"></div>
+            <div class="timeline-header">
+              <div class="timeline-badge academic-badge">Academic</div>
+              <div class="timeline-duration">
+                <i data-lucide="calendar-days" style="width:14px;height:14px;"></i>
+                2022 – Present
+              </div>
+            </div>
+            <h3 class="timeline-role">B.E. CSE – Cyber Security</h3>
+            <div class="timeline-company">
+              <i data-lucide="building-2" style="width:14px;height:14px;"></i>
+              K S R Institute for Engineering and Technology
+            </div>
+            <ul class="timeline-achievements">
+              <li>
+                <i data-lucide="check-circle-2" class="achievement-icon"></i>
+                Studying core cyber security and networking fundamentals
+              </li>
+              <li>
+                <i data-lucide="check-circle-2" class="achievement-icon"></i>
+                Developed academic and personal development projects
+              </li>
+              <li>
+                <i data-lucide="check-circle-2" class="achievement-icon"></i>
+                Balancing technical education with creative freelance work
+              </li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tl-tag">Cyber Security</span>
+              <span class="tl-tag">Networking</span>
+              <span class="tl-tag">C/Python</span>
+              <span class="tl-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Creative and technical projects I'm proud of</p>
+      </div>
+
+      <div class="project-filter" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ai">AI Agents</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-category="video" data-aos="fade-up" data-aos-delay="100"
+          onclick="openModal('reel-factory')">
+          <div class="project-card-inner">
+            <div class="project-thumb video-thumb">
+              <i data-lucide="play-square" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge video-badge">Video Editing</div>
+              <h3 class="project-name">Reel Factory</h3>
+              <p class="project-desc">100+ high-engagement reels for brands across Instagram and YouTube.</p>
+              <div class="project-stats">
+                <span><i data-lucide="film"></i> 100+ Reels</span>
+                <span><i data-lucide="trending-up"></i> High Reach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card featured-project" data-category="video" data-aos="fade-up" data-aos-delay="150"
+          onclick="openModal('promo-studio')">
+          <div class="project-card-inner">
+            <div class="project-thumb promo-thumb">
+              <i data-lucide="megaphone" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge video-badge">Video Editing</div>
+              <h3 class="project-name">Promotional Studio</h3>
+              <p class="project-desc">65+ brand promotional videos with motion graphics and color grading.</p>
+              <div class="project-stats">
+                <span><i data-lucide="video"></i> 65+ Videos</span>
+                <span><i data-lucide="star"></i> Brand Stories</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="video" data-aos="fade-up" data-aos-delay="200"
+          onclick="openModal('client-projects')">
+          <div class="project-card-inner">
+            <div class="project-thumb client-thumb">
+              <i data-lucide="users" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge video-badge">Video Editing</div>
+              <h3 class="project-name">Client Portfolio</h3>
+              <p class="project-desc">10+ diverse client projects for digital brands and businesses.</p>
+              <div class="project-stats">
+                <span><i data-lucide="briefcase"></i> 10+ Clients</span>
+                <span><i data-lucide="check-circle"></i> Delivered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100"
+          onclick="openModal('portfolio-site')">
+          <div class="project-card-inner">
+            <div class="project-thumb web-thumb">
+              <i data-lucide="globe" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge web-badge">Web Dev</div>
+              <h3 class="project-name">Portfolio Website</h3>
+              <p class="project-desc">This very portfolio — a modern, animated, dark-theme personal site.</p>
+              <div class="project-stats">
+                <span><i data-lucide="code-2"></i> HTML/CSS/JS</span>
+                <span><i data-lucide="zap"></i> Animated</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="150"
+          onclick="openModal('web-projects')">
+          <div class="project-card-inner">
+            <div class="project-thumb webprojects-thumb">
+              <i data-lucide="layout-dashboard" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge web-badge">Web Dev</div>
+              <h3 class="project-name">Web Applications</h3>
+              <p class="project-desc">5 completed web projects including landing pages and interactive UIs.</p>
+              <div class="project-stats">
+                <span><i data-lucide="layers"></i> 5 Projects</span>
+                <span><i data-lucide="monitor"></i> Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="academic" data-aos="fade-up" data-aos-delay="200"
+          onclick="openModal('security-project')">
+          <div class="project-card-inner">
+            <div class="project-thumb security-thumb">
+              <i data-lucide="lock" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge academic-badge">Deep Learning</div>
+              <h3 class="project-name">Deep Learning Project</h3>
+              <p class="project-desc">Deep learning project focused on model training, evaluation, and practical AI use
+                cases.</p>
+              <div class="project-stats">
+                <span><i data-lucide="brain"></i> Neural Nets</span>
+                <span><i data-lucide="cpu"></i> Technical</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="250"
+          onclick="openModal('ai-agent-bot')">
+          <div class="project-card-inner">
+            <div class="project-thumb ai-thumb">
+              <i data-lucide="bot" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge ai-badge">AI Agents</div>
+              <h3 class="project-name">AI Agent Workflows</h3>
+              <p class="project-desc">Exploring agentic AI systems — prompt chaining, LLM automation and multi-step
+                intelligent workflows.</p>
+              <div class="project-stats">
+                <span><i data-lucide="bot"></i> LLM-based</span>
+                <span><i data-lucide="zap"></i> Automated</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="300"
+          onclick="openModal('ai-content')">
+          <div class="project-card-inner">
+            <div class="project-thumb ai-content-thumb">
+              <i data-lucide="sparkles" class="project-thumb-icon"></i>
+              <div class="project-overlay">
+                <i data-lucide="expand" class="overlay-icon"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-cat-badge ai-badge">AI Agents</div>
+              <h3 class="project-name">AI-Assisted Content</h3>
+              <p class="project-desc">Using AI tools to supercharge video editing workflows and creative content
+                production at scale.</p>
+              <div class="project-stats">
+                <span><i data-lucide="film"></i> Creative AI</span>
+                <span><i data-lucide="trending-up"></i> Productive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS & WORKSHOPS ===== -->
+  <section id="credentials" class="section credentials-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Certifications &amp; <span class="gradient-text">Workshops</span></h2>
+        <p class="section-subtitle">Learning milestones that strengthened my technical and creative skills</p>
+      </div>
+
+      <div class="credentials-grid">
+        <article class="credential-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="credential-glow cert-glow"></div>
+          <div class="credential-icon cert-icon">
+            <i data-lucide="award"></i>
+          </div>
+          <h3 class="credential-title">Cybersecurity Certificates</h3>
+          <ul class="credential-list">
+            <li>
+              <div>
+                <span class="credential-name">Basics of CyberSecurity</span>
+                <span class="credential-meta">CyberSecurity Internship Certification · PDF</span>
+              </div>
+              <a href="assets/CyberSecurity%20Internship%20Certification/Basics%20of%20CyberSecurity.pdf"
+                target="_blank" class="credential-action">View</a>
+            </li>
+            <li>
+              <div>
+                <span class="credential-name">Cyber Security Analyst</span>
+                <span class="credential-meta">CyberSecurity Internship Certification · Image</span>
+              </div>
+              <a href="assets/CyberSecurity%20Internship%20Certification/Cyber%20Security%20Analyst.jpeg"
+                target="_blank" class="credential-action">View</a>
+            </li>
+            <li>
+              <div>
+                <span class="credential-name">Cyber Threats and Endpoint Security</span>
+                <span class="credential-meta">CyberSecurity Workshop Certificate · Image</span>
+              </div>
+              <a href="assets/CyberSecurity%20Workshop%20Certificate/Cyber%20Threats%20and%20Endpoint%20Security.jpeg"
+                target="_blank" class="credential-action">View</a>
+            </li>
+            <li>
+              <div>
+                <span class="credential-name">ETHICAL HACKING -WEB</span>
+                <span class="credential-meta">CyberSecurity Workshop Certificate · PDF</span>
+              </div>
+              <a href="assets/CyberSecurity%20Workshop%20Certificate/ETHICAL%20HACKING%20-WEB.pdf" target="_blank"
+                class="credential-action">View</a>
+            </li>
+            <li>
+              <div>
+                <span class="credential-name">Introduction to Cybersecurity</span>
+                <span class="credential-meta">CyberSecurity Workshop Certificate · PDF</span>
+              </div>
+              <a href="assets/CyberSecurity%20Workshop%20Certificate/Introduction%20to%20Cybersecurity.pdf"
+                target="_blank" class="credential-action">View</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="credential-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="credential-glow workshop-glow"></div>
+          <div class="credential-icon workshop-icon">
+            <i data-lucide="presentation"></i>
+          </div>
+          <h3 class="credential-title">Video Editing Certificates</h3>
+          <ul class="credential-list">
+            <li>
+              <div>
+                <span class="credential-name">Video Editing Course with Motion Effects</span>
+                <span class="credential-meta">Editing Course Completion · PDF</span>
+              </div>
+              <a href="assets/Editing%20Course%20Completion/Video%20Editing%20Course%20with%20Motion%20Effects.pdf"
+                target="_blank"
+                class="credential-action">View</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title"><span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">Available for freelance, internships, full-time roles, and collaborations</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-glow video-svc-glow"></div>
+          <div class="service-icon-wrap video-svc-icon">
+            <i data-lucide="clapperboard"></i>
+          </div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">Professional video editing for reels, promotional content, social media, and brand
+            storytelling with motion graphics and color grading.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" class="svc-check"></i> Reels &amp; Shorts</li>
+            <li><i data-lucide="check" class="svc-check"></i> Motion Graphics</li>
+            <li><i data-lucide="check" class="svc-check"></i> Color Grading</li>
+            <li><i data-lucide="check" class="svc-check"></i> Brand Videos</li>
+          </ul>
+          <a href="#contact" class="btn btn-service">Get Started <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card featured-service" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-glow creative-svc-glow"></div>
+          <div class="featured-service-badge">Most Popular</div>
+          <div class="service-icon-wrap creative-svc-icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3 class="service-title">Creative Media Support</h3>
+          <p class="service-desc">End-to-end creative media production support for digital brands — from concept to
+            final delivery with a strong visual storytelling approach.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" class="svc-check"></i> Content Strategy</li>
+            <li><i data-lucide="check" class="svc-check"></i> Visual Branding</li>
+            <li><i data-lucide="check" class="svc-check"></i> Social Media</li>
+            <li><i data-lucide="check" class="svc-check"></i> Digital Storytelling</li>
+          </ul>
+          <a href="#contact" class="btn btn-service-featured">Get Started <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-glow web-svc-glow"></div>
+          <div class="service-icon-wrap web-svc-icon">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Clean, responsive, modern websites and landing pages built with HTML, CSS, and
+            JavaScript with a focus on user experience and aesthetics.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" class="svc-check"></i> Landing Pages</li>
+            <li><i data-lucide="check" class="svc-check"></i> Portfolio Sites</li>
+            <li><i data-lucide="check" class="svc-check"></i> Responsive Design</li>
+            <li><i data-lucide="check" class="svc-check"></i> UI Animations</li>
+          </ul>
+          <a href="#contact" class="btn btn-service">Get Started <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="service-glow ai-svc-glow"></div>
+          <div class="service-icon-wrap ai-svc-icon">
+            <i data-lucide="bot"></i>
+          </div>
+          <h3 class="service-title">AI Agent Solutions</h3>
+          <p class="service-desc">Building and deploying AI-powered agents and automated workflows to streamline tasks —
+            from content generation to intelligent automation pipelines.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" class="svc-check"></i> Prompt Engineering</li>
+            <li><i data-lucide="check" class="svc-check"></i> LLM Automation</li>
+            <li><i data-lucide="check" class="svc-check"></i> Agentic Workflows</li>
+            <li><i data-lucide="check" class="svc-check"></i> AI-Assisted Editing</li>
+          </ul>
+          <a href="#contact" class="btn btn-service">Explore AI <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card collab-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-glow collab-glow"></div>
+          <div class="service-icon-wrap collab-icon">
+            <i data-lucide="handshake"></i>
+          </div>
+          <h3 class="service-title">Collaborations, Internships &amp; Full-time</h3>
+          <p class="service-desc">Open to freelance contracts, internship roles, full-time opportunities, and
+            collaborative projects in cyber security, AI agents, media production, and web development.</p>
+          <div class="collab-badges">
+            <span class="collab-badge">Freelance</span>
+            <span class="collab-badge">Internship</span>
+            <span class="collab-badge">Full-time</span>
+            <span class="collab-badge">Part-time</span>
+            <span class="collab-badge">Remote</span>
+          </div>
+          <a href="#contact" class="btn btn-service">Let's Connect <i data-lucide="arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">I'm always open to new opportunities and conversations</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info-col" data-aos="fade-right" data-aos-delay="100">
+          <div class="contact-info-card">
+            <div class="card-glow contact-glow"></div>
+            <h3 class="contact-info-title">Let's Build Something Together</h3>
+            <p class="contact-info-text">Whether you need a stunning video edit, a well-designed website, or want to
+              explore a cybersecurity project — I'm here for it.</p>
+            <div class="contact-items">
+              <a href="mailto:mohankmy18@gmail.com" class="contact-item">
+                <div class="contact-item-icon email-icon"><i data-lucide="mail"></i></div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-val">mohankmy18@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+916380111576" class="contact-item">
+                <div class="contact-item-icon phone-icon"><i data-lucide="phone"></i></div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">Phone</span>
+                  <span class="contact-item-val">+91 63801 11576</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/mohan-k-a33111292/" target="_blank" class="contact-item">
+                <div class="contact-item-icon linkedin-icon"><i data-lucide="linkedin"></i></div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-val">linkedin.com/in/Mohank</span>
+                </div>
+              </a>
+              <a href="https://github.com/Mohank7" target="_blank" class="contact-item">
+                <div class="contact-item-icon github-icon"><i data-lucide="github"></i></div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">GitHub</span>
+                  <span class="contact-item-val">github.com/Mohank</span>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/im_.mohxn/" target="_blank" class="contact-item">
+                <div class="contact-item-icon instagram-icon"><i data-lucide="instagram"></i></div>
+                <div class="contact-item-info">
+                  <span class="contact-item-label">Instagram</span>
+                  <span class="contact-item-val">@im_.mohxn</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col" data-aos="fade-left" data-aos-delay="150">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="card-glow form-glow"></div>
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <div class="form-input-wrap">
+                <i data-lucide="user" class="form-icon"></i>
+                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required />
+              </div>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <div class="form-input-wrap">
+                <i data-lucide="mail" class="form-icon"></i>
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com"
+                  required />
+              </div>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <div class="form-input-wrap">
+                <i data-lucide="tag" class="form-icon"></i>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Collaboration" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <div class="form-textarea-wrap">
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..."
+                  rows="5" required></textarea>
+              </div>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <i data-lucide="send" class="btn-icon"></i>
+              <span id="submitText">Send Message</span>
+            </button>
+            <div class="form-error-message" id="formError"></div>
+            <div class="form-success" id="formSuccess">
+              <i data-lucide="check-circle-2"></i>
+              <span>Message sent successfully! I'll get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo">
+          <!--span class="logo-bracket">&lt;</span>MK<span class="logo-bracket">/&gt;</span-->
+        </a>
+        <p class="footer-tagline">Cyber Security · Video Editing · Web Development · AI Agents</p>
+        <div class="footer-socials">
+          <a href="mailto:mohankmy18@gmail.com" class="social-link" aria-label="Email"><i data-lucide="mail"></i></a>
+          <a href="https://www.linkedin.com/in/mohan-k-a33111292/" target="_blank" class="social-link" aria-label="LinkedIn"><i
+              data-lucide="linkedin"></i></a>
+          <a href="https://github.com/Mohank7" target="_blank" class="social-link" aria-label="GitHub"><i
+              data-lucide="github"></i></a>
+          <a href="https://www.instagram.com/im_.mohxn/" target="_blank" class="social-link" aria-label="Instagram"><i
+              data-lucide="instagram"></i></a>
+        </div>
+        <p class="footer-copy">© 2026 Mohan K. Crafted with ❤️ and caffeine.</p>
+      </div>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i data-lucide="chevrons-up"></i>
+    </button>
+  </footer>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i data-lucide="x"></i></button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
